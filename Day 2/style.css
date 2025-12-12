@@ -1,0 +1,87 @@
+/* style all the headings with margin,padding and border properties
+
+h1, h2, h3, h4 {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #000;
+}*/
+/* show the difference between inline and block level, margin and paddings */
+/* h1 {
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #ff0000;
+}
+h2 {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #00ff00;
+}
+h3 {
+    display: inline;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid #0000ff;
+}
+h4 {
+    display: inline;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ffff00;
+} */
+
+/* animations */
+/*
+h1:hover, h2:hover, h3:hover, h4:hover {
+    background-color: aqua;
+    transition: background-color 0.5s ease;
+} */
+
+/* Transition for div */
+/*
+div {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #000;
+    transition: background-color 0.5s ease;
+}
+div:hover {
+    background-color: aqua;
+} */
+
+/* Animations */
+
+/* @keyframes colorChange {
+    from {background-color: white;}
+    to {background-color: red;}
+} */
+
+
+/*  2 boxes at the center of the page use animation and transition to change the color when the page is loaded and hovered using flex box*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 2px solid #000;
+    animation: colorChange 2s infinite alternate;
+    transition: background-color 0.5s ease;
+}
+.box:hover {
+    background-color: orange;
+}
+@keyframes colorChange {
+    0% {background-color: lightblue;}
+    50% {background-color: lightgreen;}
+    100% {background-color: lightcoral;}
+}
+
