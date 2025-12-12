@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.top-contact-bar {
+    background-color: #f8f9fa;
+    padding: 5px 0;
+    font-size: 13px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-header {
+    font-size: 12px;
+    color: #2c2c2c;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.contact-numbers-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.contact-number-item {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #00a3e0;
+    font-weight: 600;
+}
+
+.contact-number-item img {
+    width: 18px;
+    height: 13px;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+.contact-numbers {
+    display: flex;
+    align-items: center;
+}
+
+.contact-numbers img {
+    width: 20px;
+    height: 15px;
+}
+
+/* Logo Styling */
+.main-logo {
+    height: 80px;
+    width: auto;
+}
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 12px 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    color: #2c2c2c !important;
+    padding: 8px 10px !important;
+    transition: color 0.3s;
+    letter-spacing: 0.3px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #1e3a8a !important;
+}
+
+.social-icons a {
+    color: #2c2c2c;
+    font-size: 16px;
+    margin: 0 8px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #1e3a8a;
+}
+
+.carousel {
+    height: calc(100vh - 220px);
+    min-height: 500px;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.55) 50%, rgba(0,0,0,0.35) 100%);
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.carousel-caption h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.carousel-caption p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.carousel-caption .btn-primary {
+    background-color: #00bcd4;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.carousel-caption .btn-primary:hover {
+    background-color: #0097a7;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,188,212,0.4);
+}
+
+.decorative-circle {
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+    width: 700px;
+    height: 700px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.decorative-circle::before {
+    content: '';
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    background: rgba(160, 180, 200, 0.35);
+    border-radius: 50%;
+    bottom: 150px;
+    right: 200px;
+}
+
+.decorative-circle::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: rgba(0, 150, 180, 0.45);
+    border-radius: 50%;
+    bottom: 50px;
+    right: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 60px;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-indicators {
+    bottom: 30px;
+    left: 8%;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators .active {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 1000;
+}
+
+.fab-button {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #2c2c2c;
+    border: none;
+    color: white;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    transition: all 0.3s;
+}
+
+.fab-button:hover {
+    transform: scale(1.08);
+    background-color: #1a1a1a;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 992px) {
+    .carousel-caption {
+        left: 5%;
+        max-width: 90%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 40px;
+    }
+
+    .decorative-circle {
+        width: 300px;
+        height: 300px;
+        right: 50px;
+        bottom: 100px;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 100px 0;
+    min-height: calc(100vh - 145px);
+    display: flex;
+    align-items: center;
+}
+
+.about-images {
+    position: relative;
+    padding: 60px 40px;
+}
+
+.image-wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.main-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    max-width: 480px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.secondary-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.dot-pattern {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    width: 150px;
+    height: 150px;
+    background-image: radial-gradient(circle, #ddd 2px, transparent 2px);
+    background-size: 15px 15px;
+    z-index: 1;
+}
+
+.blue-circle {
+    position: absolute;
+    bottom: 50px;
+    right: -30px;
+    width: 250px;
+    height: 250px;
+    background: rgba(0, 188, 212, 0.5);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.dark-shape {
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    width: 200px;
+    height: 200px;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.about-content {
+    padding-left: 60px;
+    padding-right: 40px;
+}
+
+.badge-text {
+    display: inline-block;
+    background: rgba(0, 188, 212, 0.12);
+    color: #00bcd4;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.section-text {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.section-text .text-primary {
+    color: #00bcd4;
+    font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .about-section {
+        padding: 60px 0;
+        min-height: auto;
+    }
+
+    .about-content {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 60px;
+    }
+
+    .image-wrapper {
+        height: 400px;
+    }
+
+    .main-img {
+        max-width: 350px;
+        height: 280px;
+    }
+
+    .secondary-img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .section-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-contact-bar {
+        font-size: 12px;
+    }
+
+    .carousel {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 32px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .decorative-circle {
+        display: none;
+    }
+
+    .floating-buttons {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .fab-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
