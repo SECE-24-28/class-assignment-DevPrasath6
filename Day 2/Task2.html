@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--FORM - 1-->
+    <h1>Form - 1</h1>
+    <table border="1">
+        <tr>
+            <th colspan="2">Fill the form below</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td>Feedback</td><td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" id="male" name="gender">Male <input type="radio" id="female" name="gender">Female</td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td>
+                <input type="checkbox" id="web">Web
+                <input type="checkbox" id="math">Math
+                <input type="checkbox" id="graphics">Graphics
+                <input type="checkbox" id="english">English
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="reset">Reset All</button><button type="submit">Submit Above Details</button></td>
+        </tr>
+    </table>
+
+    <!--FORM - 2-->
+    <h1>Form - 2</h1>
+    <form action="" method="post">
+        <label for="full_name">Full Name</label>
+        <input type="text" id="full_name">
+
+        <label for="mi">MI</label>
+        <input type="text" id="mi">
+
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name"><br>
+
+        <label for="city">City</label>
+        <input type="text" id="city">
+
+        <label for="state">State</label>
+        <input type="text" id="state">
+
+        <label for="zipcode">Zipcode</label>
+        <input type="text" id="zipcode"><br>
+
+        <label for="choosesport">Choose Sport:</label><br>
+            <input type="checkbox" id="basketball">Basketball
+            <input type="checkbox" id="football">Football
+            <input type="checkbox" id="tennis">Tennis<br>
+
+        <label for="chooseyear">Choose Year:</label><br>
+            <input type="radio" id="2020" name="year">Freshman
+            <input type="radio" id="2021" name="year">Sophomore
+            <input type="radio" id="2022" name="year">Junior
+            <input type="radio" id="2023" name="year">Senior
+            <br>
+
+        <label for="favfood">Choose your favorite food</label><br>
+        <select size="4">
+            <option>Chips</option>
+            <option>Pizza</option>
+            <option>Nachos</option>
+        </select><br>
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Please let us know your comments"></textarea><br>
+
+        <button type="submit">Send it</button>
+        <button type="reset">Clear it</button>
+
+
+        <!-- <button type="button">Button</button> -->
+
+    </form>
+</body>
+</html>
